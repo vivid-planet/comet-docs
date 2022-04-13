@@ -1,7 +1,13 @@
 {
   "name": "comet-docs",
+  "license": "BSD-2-Clause",
+  "packageManager": "yarn@3.1.0",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vivid-planet/comet-docs"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -45,5 +51,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "14",
+    "yarn": "3"
   }
 }
