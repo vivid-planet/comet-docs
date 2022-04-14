@@ -4,14 +4,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'Comet',
+  title: 'Comet DXP Docs',
   tagline: '',
-  url: 'https://gitlab.vivid-planet.com',
+  url: 'https://docs.comet-dxp.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'comet', // Usually your GitHub org/user name.
+  organizationName: 'vivid-planet',
   projectName: 'comet', // Usually your repo name.
 
   presets: [
@@ -62,17 +62,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'More',
             items: [
               {
-                href: 'https://gitlab.vivid-planet.com/comet',
-                label: 'Gitlab',
-              },
-              {
                 href: 'https://github.com/vivid-planet/comet-admin',
                 label: 'GitHub',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Comet, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Vivid Planet Software GmbH. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
