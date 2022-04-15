@@ -1,6 +1,7 @@
 ---
 title: Page Tree
 sidebar_position: 5
+id: PageTree
 ---
 
 In COMET, the Page Tree combines multiple functionalities. The main task is to show and access all pages of the website. Furthermore, the Page Tree also reflects the URL scheme of the resulting site. Hence, the navigation, the sitemap, and the website's menus also use the Page Tree data.

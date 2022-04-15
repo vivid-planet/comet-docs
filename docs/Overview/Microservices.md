@@ -1,6 +1,7 @@
 ---
 title: Microservices
 sidebar_position: 1
+id: Microservices
 ---
 
 A typical Comet Application has an API, an Admin, and optionally multiple sites.

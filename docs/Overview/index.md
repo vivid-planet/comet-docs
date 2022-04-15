@@ -1,6 +1,7 @@
 ---
 title: Overview
 sidebar_position: 1
+id: Overview
 ---
 
 Comet DXP is a highly customizable platform for building modern applications based on a headless CMS.
