@@ -38,7 +38,7 @@ SITE:
 FeatureListBlock.tsx
 FeatureListItemBlock.tsx
 
-## FOLDER STRUCTURE:
+## Folder Structure:
 
 ### API
 
@@ -46,7 +46,7 @@ Every block in API should be in his specific folder. This prevents endless nesti
 
 The folder naming is Camel Case.
 
-#### Example (blocks folder)
+#### Example (Blocks Folder)
 
 headingSection (heading-section.block.ts)
 imageSlider (image-slider.block.ts)
@@ -59,7 +59,7 @@ fullWidthImageContent (full-width-image-content.block.ts)
 
 No folders necessary.
 
-#### Example (blocks folder)
+#### Example (Blocks Folder)
 
 HeadingSectionBlock.tsx
 ImageSliderBlock.tsx
@@ -68,11 +68,11 @@ MediaBlock.tsx
 FullWidthImageBlock.tsx
 FulWidthImageContentBlock.tsx
 
-### SITE (same as ADMIN)
+### SITE (Same as ADMIN)
 
 No folders necessary.
 
-#### Example (blocks folder)
+#### Example (Blocks Folder)
 
 HeadingSectionBlock.tsx
 ImageSliderBlock.tsx
