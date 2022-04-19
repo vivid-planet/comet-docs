@@ -12,7 +12,7 @@ Blocks are the primary building patterns of a Comet CMS application. In this gui
 
 The block we’re going to create is a basic headline block. The block consists of the actual **headline** (a rich text), an **eyebrow text** above the **headline** (a plain string), and the level of the headline (h1-h6).
 
-![HeadlineBlockAdminSite](images/HeadlineBlockAdminSite.png)
+![HeadlineBlockAdminSite](images/headline-block-admin-site.png)
 *The Headline block we’re going to create. On the left side, you can see a preview of the block in the frontend (site). On the right side, you can see the admin component used to fill the block with content.*
 
 ## Part one: Creating the block in the API
@@ -216,7 +216,7 @@ Please note that the names of the keys of the `blocks` object must be the same a
 
 ### The admin component
 
-![HeadlineBlockAdminSite](images/HeadlineBlockAdmin.png)
+![HeadlineBlockAdminSite](images/headline-block-admin.png)
 *The admin component of the Headline block*
 
 The admin component is the primary way a user interacts with a block. For our Headline block, the admin component consists of a text field for the eyebrow text, a rich text editor for the headline, and a select for the headline level.
@@ -430,7 +430,7 @@ Notice how the `PageContentBlock` looks slightly different from those in the API
 
 And that’s it! Now we can use our (beautiful) Headline block on the site as well.
 
-![HeadlineBlockSite](images/HeadlineBlockSite.png)
+![HeadlineBlockSite](images/headline-block-site.png)
 *The Headline block rendered in the site*
 
 The complete code for our Headline site block (including all necessary imports) can be found here:

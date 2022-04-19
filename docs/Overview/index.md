@@ -17,11 +17,11 @@ The following design principles are considered:
 
 The following diagram visually highlights these principles.
 
-![Architecture](images/ApplicationBaseline.jpg)
+![Architecture](images/application-baseline.jpg)
 
 A typical Comet application with its microservices is shown in the following diagram.
 
-![Architecture](images/Architecture.jpg)
+![Architecture](images/architecture.jpg)
 
 :::note
 
