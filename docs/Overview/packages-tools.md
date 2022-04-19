@@ -3,9 +3,9 @@ title: Packages/Tools
 sidebar_position: 2
 ---
 
-### Comet Package Overview
+### COMET DXP Package Overview
 
-A Comet DXP application, at a minimum, consists of the following packages:
+A COMET DXP application, at a minimum, consists of the following packages:
 * **Admin:** The user interface for managing the data and content of your application
 * **API:** Stores the data of your application and provides APIs for Admin, Site, and potentially others
 * **Site:** The frontend that renders the content of your application as a website

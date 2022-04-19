@@ -3,7 +3,7 @@ title: Preview
 sidebar_position: 8
 ---
 
-COMET-DXP comes with a built-in preview system. There are two different types of preview: the web preview and the block preview.
+COMET DXP comes with a built-in preview system. There are two different types of preview: the web preview and the block preview.
 
 ## Block preview
 

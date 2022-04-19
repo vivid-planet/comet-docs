@@ -1,6 +1,6 @@
-# Comet DXP Docs
+# COMET DXP Docs
 
-Comet DXP Docs is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+COMET DXP Docs is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 

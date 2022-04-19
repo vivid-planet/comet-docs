@@ -4,7 +4,7 @@ title: How to start
 
 ## Setup
 
-To create a new Comet DXP application, execute the following command in your OS command line:
+To create a new COMET DXP application, execute the following command in your OS command line:
 
 `npx create-react-app`
 

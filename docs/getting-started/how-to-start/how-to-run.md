@@ -3,7 +3,7 @@ title: How to run
 sidebar_position: 1
 ---
 
-A Comet DXP application consists of multiple processes, such as:
+A COMET DXP application consists of multiple processes, such as:
 
 * [an API](../../Overview/PackagesTools#apiPackage)
 * [an admin application](../../Overview/PackagesTools#adminPackage)
@@ -18,7 +18,7 @@ Executing the following command starts all processes required to run a COMET DXP
 
 ## That's it!
 
-Your Comet DXP application is up and running.
+Your COMET DXP application is up and running.
 
 :::info
 

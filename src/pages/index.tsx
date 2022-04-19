@@ -44,7 +44,7 @@ function HomePageOverview(): JSX.Element {
                 <div className="row" style={{ display: "flex", alignItems: "center" }}>
                     <div style={{ flex: 1, marginRight: 40 }}>
                         <p>
-                            COMET DSP is a digital experience platform that or orchestrates content, internal and external data, own and third party
+                            COMET DXP is a digital experience platform that or orchestrates content, internal and external data, own and third party
                             services, authentication and many more aspects of modern web and native applications
                         </p>
                         <p>

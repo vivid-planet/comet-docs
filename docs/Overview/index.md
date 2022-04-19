@@ -4,7 +4,7 @@ sidebar_position: 1
 id: Overview
 ---
 
-Comet DXP is a highly customizable platform for building modern applications based on a headless CMS.
+COMET DXP is a highly customizable platform for building modern applications based on a headless CMS.
 
 The following design principles are considered:
 * [The Twelve-Factor App](https://12factor.net/)
@@ -19,7 +19,7 @@ The following diagram visually highlights these principles.
 
 ![Architecture](images/application-baseline.jpg)
 
-A typical Comet application with its microservices is shown in the following diagram.
+A typical COMET DXP application with its microservices is shown in the following diagram.
 
 ![Architecture](images/architecture.jpg)
 
