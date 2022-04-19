@@ -73,15 +73,13 @@ Provides components for selecting date and time or a range or combination of dat
 
 Provides a component for selecting colors in forms, built with react-final-form.
 
-## @comet/blocks-admin
+<!-- ## @comet/blocks-admin
 
 - [ ] @Niko Sams add @comet/api-blocks docs
-<!-- TODO: add block -->
 
 ## @comet/cms-admin
 
 - [ ] @Niko Sams add @comet/cms-admin docs
-<!-- TODO: add block -->
 
 ---
 
@@ -90,12 +88,10 @@ Provides a component for selecting colors in forms, built with react-final-form.
 ### @comet/api-blocks
 
 - [ ] @Niko Sams add @comet/api-blocks docs
-<!-- TODO: add block -->
 
 ### @comet/api-cms
 
 - [ ] @Niko Sams add @comet/api-cms docs
-<!-- TODO: add block -->
 
 ---
 
@@ -124,4 +120,5 @@ Provides a component for selecting colors in forms, built with react-final-form.
 
 - [ ] @Alexander Kaufmann Deployment von Libraries (Flow, How to)
 
-- [ ] @Alexander Kaufmann Canary releases - Automatisches deployment
+- [ ] @Alexander Kaufmann Canary releases - Automatisches deployment -->
+<!-- TODO: add content -->
