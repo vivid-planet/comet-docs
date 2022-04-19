@@ -1,5 +1,6 @@
 ---
 title: How to Start
+sidebar_position: 2
 ---
 
 ## Setup
