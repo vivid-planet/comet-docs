@@ -9,41 +9,41 @@ COMET-DXP comes with a built-in preview system. There are two different types of
 
 When editing a page, there is a live preview where you can immediately see changes and how they will look on the actual website.
 
-![BlockPreview](@site/static/img/BlockPreview.png)
+![BlockPreview](images/BlockPreview.png)
 
 Additionally, there is a dark menu bar with buttons at the top of the preview.
 
-![BlockPreviewMenuBar](@site/static/img/BlockPreviewMenuBar.png)
+![BlockPreviewMenuBar](images/BlockPreviewMenuBar.png)
 
 ### Menu Bar Buttons {#menuBarButtons}
 
 This button on the left minimizes the preview to leave more space for editing the blocks.
 
-![MenuBarMinimizeButton](@site/static/img/MenuBarMinimizeButton.png)
+![MenuBarMinimizeButton](images/MenuBarMinimizeButton.png)
 
 There is the "Show only visible blocks" on the right side"-Button. And as the name already implies, invisible blocks are not shown when activated.
 
-![MenuBarShowOnlyVisibleBlocksButton](@site/static/img/MenuBarShowOnlyVisibleBlocksButton.png)
+![MenuBarShowOnlyVisibleBlocksButton](images/MenuBarShowOnlyVisibleBlocksButton.png)
 
 The list of buttons in the center of the bar offers the user different layout options. For example, the first button uses the full available screen size, while the second button limits the layout to a mobile layout for a phone. The third button is for a view on a mobile tablet layout, and the last one shows the web for a desktop PC.
 
-![MenuBarButtons](@site/static/img/MenuBarButtons.png)
+![MenuBarButtons](images/MenuBarButtons.png)
 
 ### Full-Layout
 
-![PreviewFullLayout](@site/static/img/PreviewFullLayout.png)
+![PreviewFullLayout](images/PreviewFullLayout.png)
 
 ### Mobile-Phone-Layout
 
-![PreviewMobilePhoneLayout](@site/static/img/PreviewMobilePhoneLayout.png)
+![PreviewMobilePhoneLayout](images/PreviewMobilePhoneLayout.png)
 
 ### Mobile-Tablet-Layout
 
-![PreviewMobileTabletLayout](@site/static/img/PreviewMobileTabletLayout.png)
+![PreviewMobileTabletLayout](images/PreviewMobileTabletLayout.png)
 
 ### Desktop-PC-Layout
 
-![PreviewDesktopPCLayout](@site/static/img/PreviewDesktopPCLayout.png)
+![PreviewDesktopPCLayout](images/PreviewDesktopPCLayout.png)
 
 ### Done! That’s all the preview’s menu bar has to offer
 
@@ -53,21 +53,21 @@ But there is another powerful feature!
 
 When you hover the mouse cursor over an element in the block list, the block receives a highlighting box. Furthermore, the preview automatically scrolls to the highlighted block.
 
-![PreviewHover1](@site/static/img/PreviewHover1.png)
+![PreviewHover1](images/PreviewHover1.png)
 
 Additionally, you can hover over elements in the preview, and the block will be highlighted in the block list on the right.
 
-![PreviewHover2](@site/static/img/PreviewHover2.png)
+![PreviewHover2](images/PreviewHover2.png)
 
 Blocks almost always consist of several elements. So if you want to edit one of them, click on it once with the left mouse button, and you can directly edit the selected element.
 
-![PreviewHover3](@site/static/img/PreviewHover3.png)
+![PreviewHover3](images/PreviewHover3.png)
 
 ## Web preview
 
 The web preview is an overview of the entire website in preview mode, as seen in the image below.
 
-![WebPreview](@site/static/img/WebPreview.png)
+![WebPreview](images/WebPreview.png)
 
 So what are the advantages of the web preview? The web preview is always live, while the current website may not be built yet. The menu bar in the web preview works just like the [menu bar in the block preview](#menuBarButtons). If you still want to view the website directly, you can find the URL to your website in the left area of the menu bar.
 
