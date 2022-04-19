@@ -3,7 +3,7 @@ title: Core concepts
 sidebar_position: 3
 ---
 
-On this page, you’ll learn the core concepts of COMET DXP. These concepts represent the essential building blocks when developing COMET DXP applications. List the status of all processes:
+On this page, you'll learn the core concepts of COMET DXP. These concepts represent the essential building blocks when developing COMET DXP applications. List the status of all processes:
 
 ## Page tree
 
@@ -12,7 +12,7 @@ On this page, you’ll learn the core concepts of COMET DXP. These concepts repr
 
 The page tree is the main entry point for a COMET DXP application. It represents the hierarchy of the application. The tree has multiple nodes and child nodes. Typically, the page tree hierarchy is used to create the main navigation of the page.
 
-Each node has a **slug** (sometimes referred to as the “URL part”), which is unique for the level in which the node resides. The slug is used to construct the **path** of a page tree node. For instance, the “All products” page tree node in the example above may have the slug “all-products.” Combined with the slug “products” of the parent page tree, node “Products” results in the path “/products/all-products.”
+Each node has a **slug** (sometimes referred to as the "URL part"), which is unique for the level in which the node resides. The slug is used to construct the **path** of a page tree node. For instance, the "All products" page tree node in the example above may have the slug "all-products." Combined with the slug "products" of the parent page tree, node "Products" results in the path "/products/all-products."
 
 ![SlugAndPath](images/slug-and-path.png)
 *Slug and path of a page tree node*
@@ -28,7 +28,7 @@ Documents can be attached to nodes in the page tree. Multiple documents can be a
 *Document type select for a page tree node*
 
 ## Blocks
-Blocks represent the smallest unit in a COMET DXP application and are used for unstructured content created by content editors (often called “dumb” content). Multiple blocks can be composed in a tree-like structure to represent parts (or a whole page) of content.
+Blocks represent the smallest unit in a COMET DXP application and are used for unstructured content created by content editors (often called "dumb" content). Multiple blocks can be composed in a tree-like structure to represent parts (or a whole page) of content.
 Blocks at the root of a document are commonly referred to as **root blocks**. Root blocks offer additional functionality, such as creating an index of paths for their child blocks.
 
 A document typically holds at least one block, the **content block**. However, a document may have additional blocks, such as stage or SEO blocks.
@@ -42,7 +42,7 @@ A document typically holds at least one block, the **content block**. However, a
 ## Content scope
 
 Content in a COMET DXP application is usually scoped to a specific domain, for instance, per website or language. This feature is called content scope. Some parts of the application, such as the page tree, are always scoped, as they must be maintained separately. Other parts of the application, such as products retrieved from an external data source, may be used across multiple scopes. These parts should be stored in the global content scope (= no scope).
-Using a scope for specific content introduces additional complexity to the whole application. A content’s scope has to be taken into consideration at all times when accessing the content. Therefore, the use of a content scope should be well considered. Generally speaking, a content scope should not be added prematurely but only when needed.
+Using a scope for specific content introduces additional complexity to the whole application. A content's scope has to be taken into consideration at all times when accessing the content. Therefore, the use of a content scope should be well considered. Generally speaking, a content scope should not be added prematurely but only when needed.
 
 ![ContentScope](images/content-scope.png)
 *Content scope select*

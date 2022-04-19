@@ -10,10 +10,10 @@ Blocks are the primary building patterns of a COMET DXP CMS application. In this
 
 ## The block: Headline
 
-The block we’re going to create is a basic headline block. The block consists of the actual **headline** (a rich text), an **eyebrow text** above the **headline** (a plain string), and the level of the headline (h1-h6).
+The block we're going to create is a basic headline block. The block consists of the actual **headline** (a rich text), an **eyebrow text** above the **headline** (a plain string), and the level of the headline (h1-h6).
 
 ![HeadlineBlockAdminSite](images/headline-block-admin-site.png)
-*The Headline block we’re going to create. On the left side, you can see a preview of the block in the frontend (site). On the right side, you can see the admin component used to fill the block with content.*
+*The Headline block we're going to create. On the left side, you can see a preview of the block in the frontend (site). On the right side, you can see the admin component used to fill the block with content.*
 
 ## Part one: Creating the block in the API
 
@@ -46,7 +46,7 @@ class HeadlineBlockData extends BlockData {
 }
 ```
 
-The `@BlockField` and `@ChildBlock` decorators are used to create the block meta, which is used by the admin and the site to generate TypeScript interfaces for the block automatically. This feature is inspired by [NestJS’ GraphQL code first approach](https://docs.nestjs.com/graphql/quick-start#code-first).
+The `@BlockField` and `@ChildBlock` decorators are used to create the block meta, which is used by the admin and the site to generate TypeScript interfaces for the block automatically. This feature is inspired by [NestJS' GraphQL code first approach](https://docs.nestjs.com/graphql/quick-start#code-first).
 
 Note how we use the `RichTextBlock`, a COMET DXP block, to create our Headline block. Composing a block out of child blocks and additional fields is no problem!
 
@@ -87,7 +87,7 @@ Now that our block data and block input are defined, we need to create the block
 
 ### Part one - done!
 
-You’ve just created your first block in the API. The next step is to create the block in the admin (the CMS backend).
+You've just created your first block in the API. The next step is to create the block in the admin (the CMS backend).
 
 The complete code for our Headline API block (including all necessary imports) can be found here:
 
@@ -221,7 +221,7 @@ Please note that the names of the keys of the `blocks` object must be the same a
 
 The admin component is the primary way a user interacts with a block. For our Headline block, the admin component consists of a text field for the eyebrow text, a rich text editor for the headline, and a select for the headline level.
 
-Let’s take a look at how the admin component is defined in code. The text field for the **eyebrow text** is a plain Final Form field, used the same way you’d use it in any COMET DXP Admin application. The form is wrapped using `createCompositeSetting`, which helps to integrate the form state into the block state. Also, note the use of the `HeadlineBlockData` type. This interface is generated using the block mentioned above meta -- how cool is that?!
+Let's take a look at how the admin component is defined in code. The text field for the **eyebrow text** is a plain Final Form field, used the same way you'd use it in any COMET DXP Admin application. The form is wrapped using `createCompositeSetting`, which helps to integrate the form state into the block state. Also, note the use of the `HeadlineBlockData` type. This interface is generated using the block mentioned above meta -- how cool is that?!
 
 ```tsx title="HeadlineBlock.tsx"
 eyebrow: {
@@ -239,7 +239,7 @@ eyebrow: {
 },
 ```
 
-For the **headline** rich text, we’re using the `RichTextBlock`, once again, the same as we did for the API block. Not how we use the `title` prop to identify the rich text as the headline.
+For the **headline** rich text, we're using the `RichTextBlock`, once again, the same as we did for the API block. Not how we use the `title` prop to identify the rich text as the headline.
 
 ```tsx title="HeadlineBlock.tsx"
 headline: {
@@ -248,7 +248,7 @@ headline: {
 },
 ```
 
-For the **level** select, we’re once again using a plain Final Form field in combination with createCompositeSetting.
+For the **level** select, we're once again using a plain Final Form field in combination with createCompositeSetting.
 
 ```tsx title="HeadlineBlock.tsx"
 level: {
@@ -297,7 +297,7 @@ Note how we are using `createBlocksBlock` once again? The helper is available fo
 
 ### Part two - done!
 
-Now that we’ve created and registered our Headline block in the admin as well, our users can already use the block and fill it with content. However, they can’t see the block on their website yet! But no worries, we’ll achieve just that in the third and final part of this guide.
+Now that we've created and registered our Headline block in the admin as well, our users can already use the block and fill it with content. However, they can't see the block on their website yet! But no worries, we'll achieve just that in the third and final part of this guide.
 
 The complete code for our Headline admin block (including all necessary imports) can be found here:
 
@@ -401,15 +401,15 @@ export const HeadlineBlock = withPreview(
 
 :::note
 
-The `getHeadlineRenderers` method tells the site which heading section tag (h1-h6) should be used. As this implementation detail is not relevant for learning how to create a block, we’ll not discuss it in detail.
+The `getHeadlineRenderers` method tells the site which heading section tag (h1-h6) should be used. As this implementation detail is not relevant for learning how to create a block, we'll not discuss it in detail.
 
 :::
 
-Note how we’re using the generated `HeadlineBlockData` once again. Awesome!
+Note how we're using the generated `HeadlineBlockData` once again. Awesome!
 
 ### Register the block
 
-You might have already guessed it: We need to register the Headline block once again. Let’s take a look at the `PageContentBlock` in the site:
+You might have already guessed it: We need to register the Headline block once again. Let's take a look at the `PageContentBlock` in the site:
 
 ```tsx title="PageContentBlock.tsx"
 const supportedBlocks: SupportedBlocks = {
@@ -428,7 +428,7 @@ Notice how the `PageContentBlock` looks slightly different from those in the API
 
 ### Part three - done!
 
-And that’s it! Now we can use our (beautiful) Headline block on the site as well.
+And that's it! Now we can use our (beautiful) Headline block on the site as well.
 
 ![HeadlineBlockSite](images/headline-block-site.png)
 *The Headline block rendered in the site*
@@ -487,12 +487,12 @@ export const HeadlineBlock = withPreview(
 
 ## Conclusion
 
-In this guide, we’ve learned how to create a block in a COMET DXP CMS project from start to end. We first defined the structure of the block’s data in the API, then created the admin component for users to interact with the block, and finally added the block to the site (frontend).
+In this guide, we've learned how to create a block in a COMET DXP CMS project from start to end. We first defined the structure of the block's data in the API, then created the admin component for users to interact with the block, and finally added the block to the site (frontend).
 
 Now you should be ready to create additional blocks! Maybe even a Dog Ear block?
 
 :::info
 
-We’ve only covered the basic concepts of COMET DXP blocks in this guide. To get a full picture, please review the [blocks](../Blocks/) section in our documentation.
+We've only covered the basic concepts of COMET DXP blocks in this guide. To get a full picture, please review the [blocks](../Blocks/) section in our documentation.
 
 :::

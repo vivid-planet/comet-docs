@@ -29,7 +29,7 @@ Many of the highlighted microservices can be exchanged or omitted.
 
 :::
 
-**Why don’t just use an off-the-shelf solution?**
+**Why don't just use an off-the-shelf solution?**
 
 * We want a solution that is highly customizable
 * We want to offer excellent developer experience (DX)

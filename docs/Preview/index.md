@@ -45,7 +45,7 @@ The list of buttons in the center of the bar offers the user different layout op
 
 ![PreviewDesktopPCLayout](images/preview-desktop-pc-layout.png)
 
-### Done! That’s all the preview’s menu bar has to offer
+### Done! That's all the preview's menu bar has to offer
 
 But there is another powerful feature!
 
@@ -86,9 +86,9 @@ export const HeadlineBlock = withPreview(
 );
 ```
 
-### That’s all it takes! We have taken care of everything else.
+### That's all it takes! We have taken care of everything else.
 
-## Additional implementation details:
+## Additional implementation details
 
 ### Manually opening the web preview
 
