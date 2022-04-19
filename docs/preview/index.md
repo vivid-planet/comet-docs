@@ -111,6 +111,6 @@ import { Preview } from "@comet/admin-icons";
 
 :::warning
 
-Additional steps are required to use the preview with [structured data](./StructuredData), which will be covered by future versions of the documentation.
+Additional steps are required to use the preview with [structured data](../structured-data), which will be covered by future versions of the documentation.
 
 :::
