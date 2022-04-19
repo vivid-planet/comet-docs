@@ -1,3 +1,3 @@
 module.exports = {
-    "*": () => "npx prettier -c .",
+    "*": () => "yarn exec prettier -c .",
 };

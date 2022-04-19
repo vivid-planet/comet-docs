@@ -9,7 +9,7 @@
         "url": "https://github.com/vivid-planet/comet-docs"
     },
     "scripts": {
-        "prepare": "husky install",
+        "postinstall": "husky install",
         "docusaurus": "docusaurus",
         "start": "docusaurus start",
         "build": "docusaurus build",
