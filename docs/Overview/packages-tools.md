@@ -120,7 +120,7 @@ Provides a component for selecting colors in forms, built with react-final-form.
 
 ---
 
-## Deployment from packages
+## Deployment from Packages
 
 - [ ] @Alexander Kaufmann Deployment von Libraries (Flow, How to)
 

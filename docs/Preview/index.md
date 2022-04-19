@@ -5,7 +5,7 @@ sidebar_position: 8
 
 COMET DXP comes with a built-in preview system. There are two different types of preview: the web preview and the block preview.
 
-## Block preview
+## Block Preview
 
 When editing a page, there is a live preview where you can immediately see changes and how they will look on the actual website.
 
@@ -63,7 +63,7 @@ Blocks almost always consist of several elements. So if you want to edit one of 
 
 ![PreviewHover3](images/preview-hover3.png)
 
-## Web preview
+## Web Preview
 
 The web preview is an overview of the entire website in preview mode, as seen in the image below.
 
@@ -88,9 +88,9 @@ export const HeadlineBlock = withPreview(
 
 ### That's all it takes! We have taken care of everything else.
 
-## Additional implementation details
+## Additional Implementation Details
 
-### Manually opening the web preview
+### Manually Opening the Web Preview
 
 If you want to open the web preview at a particular place, you can do that with the following code:
 

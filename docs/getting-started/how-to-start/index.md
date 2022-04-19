@@ -1,5 +1,5 @@
 ---
-title: How to start
+title: How to Start
 ---
 
 ## Setup

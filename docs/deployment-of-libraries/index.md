@@ -1,5 +1,5 @@
 ---
-title: Deployment of libraries & canary releases
+title: Deployment of Libraries & Canary Releases
 sidebar_position: 10
 ---
 

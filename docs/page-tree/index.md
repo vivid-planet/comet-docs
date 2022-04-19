@@ -6,11 +6,11 @@ id: PageTree
 
 In COMET DXP, the Page Tree combines multiple functionalities. The main task is to show and access all pages of the website. Furthermore, the Page Tree also reflects the URL scheme of the resulting site. Hence, the navigation, the sitemap, and the website's menus also use the Page Tree data.
 
-## Page Tree action
+## Page Tree Action
 
 The page tree supports all relevant possibilities to modify it. You can *create* and *delete* pages at every level. You can *move* pages via drag and drop to adjust the structure. Furthermore, you can *copy*, *paste* and *duplicate* pages.
 
-## Page properties
+## Page Properties
 
 Every page has the following Page properties:
 * **Name**: The name serves as the title for the document
@@ -18,7 +18,7 @@ Every page has the following Page properties:
 * **Document Type**: You can choose between *Page* and *Link*. Additional document types are possible.
 * **Hide in Menu**: You can choose not to show the page in a menu.
 
-## Page status
+## Page Status
 
 A page can have one of the following statuses:
 * **Published**: The page is part of the build process and is accessible on the website.

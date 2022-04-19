@@ -1,5 +1,5 @@
 ---
-title: How to run
+title: How to Run
 sidebar_position: 1
 ---
 
@@ -27,7 +27,7 @@ Your COMET DXP application is up and running.
 
 :::
 
-## Managing your processes
+## Managing Your Processes
 
 List the status of al processes:
 

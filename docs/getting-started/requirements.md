@@ -2,7 +2,7 @@
 title: Requirements
 ---
 
-## For local development
+## For Local Development
 
 * [Docker](https://www.docker.com/products/docker-desktop)
 

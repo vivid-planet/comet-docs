@@ -1,11 +1,11 @@
 ---
-title: Core concepts
+title: Core Concepts
 sidebar_position: 3
 ---
 
 On this page, you'll learn the core concepts of COMET DXP. These concepts represent the essential building blocks when developing COMET DXP applications. List the status of all processes:
 
-## Page tree
+## Page Tree
 
 ![PageTree](images/page-tree.png)
 *Page tree of a typical COMET DXP application*
@@ -39,7 +39,7 @@ A document typically holds at least one block, the **content block**. However, a
 ![HeadlineBlock](images/headline-block.png)
 *A headline block*
 
-## Content scope
+## Content Scope
 
 Content in a COMET DXP application is usually scoped to a specific domain, for instance, per website or language. This feature is called content scope. Some parts of the application, such as the page tree, are always scoped, as they must be maintained separately. Other parts of the application, such as products retrieved from an external data source, may be used across multiple scopes. These parts should be stored in the global content scope (= no scope).
 Using a scope for specific content introduces additional complexity to the whole application. A content's scope has to be taken into consideration at all times when accessing the content. Therefore, the use of a content scope should be well considered. Generally speaking, a content scope should not be added prematurely but only when needed.

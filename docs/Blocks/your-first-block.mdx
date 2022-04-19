@@ -1,5 +1,5 @@
 ---
-title: Your first block
+title: Your First Block
 sidebar_position: 1
 ---
 
@@ -8,19 +8,19 @@ import CodeBlock from '@theme/CodeBlock';
 Blocks are the primary building patterns of a COMET DXP CMS application. In this guide, you will learn how to create your first block, from beginning to end.
 <!-- TODO: Be more specific: Three parts, API, admin and site -->
 
-## The block: Headline
+## The Block: Headline
 
 The block we're going to create is a basic headline block. The block consists of the actual **headline** (a rich text), an **eyebrow text** above the **headline** (a plain string), and the level of the headline (h1-h6).
 
 ![HeadlineBlockAdminSite](images/headline-block-admin-site.png)
 *The Headline block we're going to create. On the left side, you can see a preview of the block in the frontend (site). On the right side, you can see the admin component used to fill the block with content.*
 
-## Part one: Creating the block in the API
+## Part One: Creating the Block in the API
 
 The first step is to create the block in the API. Here we define how the block is stored in the database and which data is sent to the admin and the site. In the API, the block is divided into two parts: The block data, the data which is stored, and the block input, the data that is sent from the admin to create a new instance of a block.
 <!-- TODO: create or update the blocks data -->
 
-### Define the block data
+### Define the Block Data
 
 The block data defines how a block is stored in the database. We need to store the eyebrow text, the headline rich text, and the headline level for our Headline block. Therefore the block data should be the following:
 
@@ -50,7 +50,7 @@ The `@BlockField` and `@ChildBlock` decorators are used to create the block meta
 
 Note how we use the `RichTextBlock`, a COMET DXP block, to create our Headline block. Composing a block out of child blocks and additional fields is no problem!
 
-### Define the block input
+### Define the Block Input
 
 Once we have defined the block data, we also need to define the block input. The block input is used to create a new instance of a block. To be more precise, the block input is used to create the block data, which is stored in the database. In most cases, the block input is nearly identical to the block data. For our headline block, the block input should be the following:
 <!-- TODO: ein vergleich mit einem DTO und/oder GraphQL Input Type kann vielleicht helfen -->
@@ -81,11 +81,11 @@ class HeadlineBlockInput extends BlockInput {
 
 Note the method called `transformToBlockData()`. This method transforms the block input into the savable block data. As this method is nearly identical for all blocks, we provide a `inputToData` method to create the intended outcome.
 
-### Create and register the block
+### Create and Register the Block
 
 Now that our block data and block input are defined, we need to create the block and register it in a page document. Typically, the page document has a root block called `PageContentBlock`. In this `PageContentBlock`, we now register the newly created Headline block:
 
-### Part one - done!
+### Part One - Done!
 
 You've just created your first block in the API. The next step is to create the block in the admin (the CMS backend).
 
@@ -149,11 +149,11 @@ export const HeadlineBlock = createBlock(HeadlineBlockData, HeadlineBlockInput, 
     </div>
 </details>
 
-## Part two: Creating the block in the admin (CMS backend)
+## Part Two: Creating the Block in the Admin (CMS Backend)
 
 The second step is to create the block in the admin. The admin is where our users will create new instances of our Headline block and fill it with actual content.
 
-### Creating the block with `createCompositeBlock`
+### Creating the Block With `createCompositeBlock`
 
 ```tsx title="HeadlineBlock.tsx"
 export const HeadlineBlock = createCompositeBlock(
@@ -214,7 +214,7 @@ export const HeadlineBlock = createCompositeBlock(
 Please note that the names of the keys of the `blocks` object must be the same as the name of fields in the the API block (eyebrow, headline and level).
 <!-- wollten wir nicht eher createCompositeSettings präferieren? -->
 
-### The admin component
+### The Admin Component
 
 ![HeadlineBlockAdminSite](images/headline-block-admin.png)
 *The admin component of the Headline block*
@@ -277,7 +277,7 @@ level: {
 },
 ```
 
-### Register the block
+### Register the Block
 
 In the same way, we registered the block in the API, we need to register our admin Headline block in the `PageContentBlock` of the admin:
 
@@ -295,7 +295,7 @@ export const PageContentBlock = createBlocksBlock({
 
 Note how we are using `createBlocksBlock` once again? The helper is available for both the API and the admin part of your COMET DXP application!
 
-### Part two - done!
+### Part Two - Done!
 
 Now that we've created and registered our Headline block in the admin as well, our users can already use the block and fill it with content. However, they can't see the block on their website yet! But no worries, we'll achieve just that in the third and final part of this guide.
 
@@ -381,7 +381,7 @@ export const HeadlineBlock = createCompositeBlock(
     </div>
 </details>
 
-## Part three - Adding the block to the site {#partThree}
+## Part Three - Adding the Block to the Site {#partThree}
 
 The site (or frontend) is responsible for rendering blocks and their content. Consequently, we also need to add our Headline block to the site. See the following code snippet on how to create the block for the site.
 
@@ -407,7 +407,7 @@ The `getHeadlineRenderers` method tells the site which heading section tag (h1-h
 
 Note how we're using the generated `HeadlineBlockData` once again. Awesome!
 
-### Register the block
+### Register the Block
 
 You might have already guessed it: We need to register the Headline block once again. Let's take a look at the `PageContentBlock` in the site:
 
@@ -426,7 +426,7 @@ export function PageContentBlock({ data }: PropsWithData<PageContentBlockData>) 
 
 Notice how the `PageContentBlock` looks slightly different from those in the API and admin parts? This is because we're writing actual React components for our blocks here and may extend the blocks with props specific to the site (e.g., the Image block may have an `aspectRatio` prop). The `PropsWithData` interface and the `data` prop are used to distinguish data that's coming from the API with props we're specifying on the site.
 
-### Part three - done!
+### Part Three - Done!
 
 And that's it! Now we can use our (beautiful) Headline block on the site as well.
 
