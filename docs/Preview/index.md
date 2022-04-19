@@ -75,9 +75,9 @@ So what are the advantages of the web preview? The web preview is always live, w
 
 But what steps need to be taken to make the block preview work as described?
 
-If you [followed the guide to create your first block](./Blocks/YourFirstBlock), it already works!
+If you [followed the guide to create your first block](../blocks/your-first-block), it already works!
 
-In section "[Part three - Adding the block to the site](./Blocks/YourFirstBlock#partThree)," the function `withPreview(...)` is wrapped around the block-specific code. So to get the preview working with all its features, simply wrap the `withPreview()` function over each block and give it an expressive label!
+In section "[Part three - Adding the block to the site](../blocks/your-first-block#partThree)," the function `withPreview(...)` is wrapped around the block-specific code. So to get the preview working with all its features, simply wrap the `withPreview()` function over each block and give it an expressive label!
 
 ```tsx title="HeadlineBlock.tsx"
 export const HeadlineBlock = withPreview(

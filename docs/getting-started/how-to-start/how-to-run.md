@@ -5,12 +5,12 @@ sidebar_position: 1
 
 A COMET DXP application consists of multiple processes, such as:
 
-* [an API](../../Overview/PackagesTools#apiPackage)
-* [an admin application](../../Overview/PackagesTools#adminPackage)
-* [a frontend site application](../../Overview/PackagesTools#sitePackage)
+* [an API](../../overview/packages-tools#apiPackage)
+* [an admin application](../../overview/packages-tools#adminPackage)
+* [a frontend site application](../../overview/packages-tools#sitePackage)
 * type generators
 
-We recommend using a process manager to avoid starting all these processes manually. Luckily, the steps in the [installation section](../HowToStart) automatically installed the package: [@vivid-planet/dev-process-manager](https://github.com/vivid-planet/dev-process-manager). 
+We recommend using a process manager to avoid starting all these processes manually. Luckily, the steps in the [installation section](../how-to-start) automatically installed the package: [@vivid-planet/dev-process-manager](https://github.com/vivid-planet/dev-process-manager). 
 
 Executing the following command starts all processes required to run a COMET DXP application:
 
