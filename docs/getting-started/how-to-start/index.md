@@ -23,11 +23,11 @@ To start the installation process, execute the command:
 
 :::info
 
-The *install.sh* script executes several commands necessary for development, such as:
+The _install.sh_ script executes several commands necessary for development, such as:
 
-* Installing required packages
-* Creation of folders
-* Creation of shortcuts
+-   Installing required packages
+-   Creation of folders
+-   Creation of shortcuts
 
 And can be customized with other commands required for your application.
 

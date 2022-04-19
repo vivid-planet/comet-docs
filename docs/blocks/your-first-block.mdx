@@ -3,9 +3,10 @@ title: Your First Block
 sidebar_position: 1
 ---
 
-import CodeBlock from '@theme/CodeBlock';
+import CodeBlock from "@theme/CodeBlock";
 
 Blocks are the primary building patterns of a COMET DXP CMS application. In this guide, you will learn how to create your first block, from beginning to end.
+
 <!-- TODO: Be more specific: Three parts, API, admin and site -->
 
 ## The Block: Headline
@@ -13,11 +14,12 @@ Blocks are the primary building patterns of a COMET DXP CMS application. In this
 The block we're going to create is a basic headline block. The block consists of the actual **headline** (a rich text), an **eyebrow text** above the **headline** (a plain string), and the level of the headline (h1-h6).
 
 ![HeadlineBlockAdminSite](images/headline-block-admin-site.png)
-*The Headline block we're going to create. On the left side, you can see a preview of the block in the frontend (site). On the right side, you can see the admin component used to fill the block with content.*
+_The Headline block we're going to create. On the left side, you can see a preview of the block in the frontend (site). On the right side, you can see the admin component used to fill the block with content._
 
 ## Part One: Creating the Block in the API
 
 The first step is to create the block in the API. Here we define how the block is stored in the database and which data is sent to the admin and the site. In the API, the block is divided into two parts: The block data, the data which is stored, and the block input, the data that is sent from the admin to create a new instance of a block.
+
 <!-- TODO: create or update the blocks data -->
 
 ### Define the Block Data
@@ -53,6 +55,7 @@ Note how we use the `RichTextBlock`, a COMET DXP block, to create our Headline b
 ### Define the Block Input
 
 Once we have defined the block data, we also need to define the block input. The block input is used to create a new instance of a block. To be more precise, the block input is used to create the block data, which is stored in the database. In most cases, the block input is nearly identical to the block data. For our headline block, the block input should be the following:
+
 <!-- TODO: ein vergleich mit einem DTO und/oder GraphQL Input Type kann vielleicht helfen -->
 
 ```ts title="headline.block.ts"
@@ -78,7 +81,6 @@ class HeadlineBlockInput extends BlockInput {
 }
 ```
 
-
 Note the method called `transformToBlockData()`. This method transforms the block input into the savable block data. As this method is nearly identical for all blocks, we provide a `inputToData` method to create the intended outcome.
 
 ### Create and Register the Block
@@ -91,14 +93,11 @@ You've just created your first block in the API. The next step is to create the 
 
 The complete code for our Headline API block (including all necessary imports) can be found here:
 
-
-
 <details>
     <summary>headline.block.ts</summary>
     <div>
         <CodeBlock language="ts">
-{
-`import {
+            {`import {
     BlockData,
     BlockDataInterface,
     BlockField,
@@ -143,8 +142,7 @@ export class HeadlineBlockInput extends BlockInput {
     }
 }\n
 export const HeadlineBlock = createBlock(HeadlineBlockData, HeadlineBlockInput, "Headline");
-`
-}
+`}
         </CodeBlock>
     </div>
 </details>
@@ -212,12 +210,13 @@ export const HeadlineBlock = createCompositeBlock(
 ```
 
 Please note that the names of the keys of the `blocks` object must be the same as the name of fields in the the API block (eyebrow, headline and level).
+
 <!-- wollten wir nicht eher createCompositeSettings präferieren? -->
 
 ### The Admin Component
 
 ![HeadlineBlockAdminSite](images/headline-block-admin.png)
-*The admin component of the Headline block*
+_The admin component of the Headline block_
 
 The admin component is the primary way a user interacts with a block. For our Headline block, the admin component consists of a text field for the eyebrow text, a rich text editor for the headline, and a select for the headline level.
 
@@ -305,8 +304,7 @@ The complete code for our Headline admin block (including all necessary imports)
     <summary>HeadlineBlock.tsx</summary>
     <div>
         <CodeBlock language="ts">
-{
-`import { Field, FinalFormInput, FinalFormSelect } from "@comet/admin";
+            {`import { Field, FinalFormInput, FinalFormSelect } from "@comet/admin";
 import { BlockCategory, BlocksFinalForm, createCompositeBlock, createCompositeSetting } from "@comet/blocks-admin";
 import { createRichTextBlock } from "@comet/cms-admin";
 import { MenuItem } from "@material-ui/core";
@@ -375,8 +373,7 @@ export const HeadlineBlock = createCompositeBlock(
         category: BlockCategory.TextAndContent,
     }),
 );
-`
-}
+`}
         </CodeBlock>
     </div>
 </details>
@@ -431,7 +428,7 @@ Notice how the `PageContentBlock` looks slightly different from those in the API
 And that's it! Now we can use our (beautiful) Headline block on the site as well.
 
 ![HeadlineBlockSite](images/headline-block-site.png)
-*The Headline block rendered in the site*
+_The Headline block rendered in the site_
 
 The complete code for our Headline site block (including all necessary imports) can be found here:
 
@@ -439,8 +436,7 @@ The complete code for our Headline site block (including all necessary imports) 
     <summary>HeadlineBlock.tsx</summary>
     <div>
         <CodeBlock language="tsx">
-{
-`import { PropsWithData, withPreview } from "@comet/cms-site";
+            {`import { PropsWithData, withPreview } from "@comet/cms-site";
 import { HeadlineBlockData } from "@src/blocks.generated";
 import * as React from "react";
 import { Renderers } from "redraft";\n
@@ -479,8 +475,7 @@ export const HeadlineBlock = withPreview(
     },
     { label: "Headline" },
 );
-`
-}
+`}
         </CodeBlock>
     </div>
 </details>

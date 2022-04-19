@@ -81,7 +81,9 @@ In section "[Part three - Adding the block to the site](../blocks/your-first-blo
 
 ```tsx title="HeadlineBlock.tsx"
 export const HeadlineBlock = withPreview(
-    {/* Block-specific code */},
+    {
+        /* Block-specific code */
+    },
     { label: "Headline" },
 );
 ```

@@ -19,8 +19,9 @@ We persist our data in [PostgreSQL](https://www.postgresql.org/) database. As a 
 The admin provides interfaces for managing data. It is built using [React](https://reactjs.org/) with Typescript. We create our admin applications using [MUI](https://mui.com/) design library. For interaction with the API we rely on [ApolloClient](https://www.apollographql.com/docs/react/), the counterpart to ApolloServer.
 
 Other core libraries in use:
-* [FinalForm](https://final-form.org/react) for creating Forms
-* [ReactRouter](https://reactrouter.com/) for navigation
+
+-   [FinalForm](https://final-form.org/react) for creating Forms
+-   [ReactRouter](https://reactrouter.com/) for navigation
 
 ### Site
 
