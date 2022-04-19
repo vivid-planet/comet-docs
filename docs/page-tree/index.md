@@ -4,7 +4,7 @@ sidebar_position: 5
 id: PageTree
 ---
 
-In COMET DXP, the Page Tree combines multiple functionalities. The main task is to show and access all pages of the website. Furthermore, the Page Tree also reflects the URL scheme of the resulting site. Hence, the navigation, the sitemap, and the website's menus also use the Page Tree data.
+In COMET DXP, the page tree combines multiple functionalities. The main task is to show and access all pages of the website. Furthermore, the page tree also reflects the URL scheme of the resulting site. Hence, the navigation, the sitemap, and the website's menus also use the page tree data.
 
 ## Page Tree Action
 
@@ -23,7 +23,7 @@ Every page has the following Page properties:
 A page can have one of the following statuses:
 * **Published**: The page is part of the build process and is accessible on the website.
 * **Unpublished**: The page is not part of the build process.
-* **Archived**: The page is not part of the build process, and it disappears from the Page Tree unless you switch on *Archived Items* on the top of the Page Tree.
+* **Archived**: The page is not part of the build process, and it disappears from the page tree unless you switch on *Archived Items* on the top of the page tree.
 
 ## Search
 
