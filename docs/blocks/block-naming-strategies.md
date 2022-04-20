@@ -3,8 +3,8 @@ title: Block Naming Strategies
 sidebar_position: 4
 ---
 
-API -> Kebab Case
-ADMIN -> Pascal Case
+API -> Kebab Case<br />
+ADMIN -> Pascal Case<br />
 SITE -> Pascal Case
 
 Name blocks more like what they are rather than what they contain. This excepts basic blocks like "LinkBlock" or "HeadlineBlock."
@@ -13,32 +13,32 @@ Naming should end with ".block" in API with Kebab Case or "Block" in Pascal Case
 
 #### Headline Example
 
-API:
+API:<br />
 headline.block.ts
 
-ADMIN:
+ADMIN:<br />
 HeadlineBlock.tsx
 
-SITE:
+SITE:<br />
 HeadlineBlock.tsx
 
 ——
 
-#### LinkList Example
+#### FeatureList Example
 
-API:
-feature-list.block.ts
+API:<br />
+feature-list.block.ts<br />
 feature-list-item.block.ts
 
-ADMIN:
-FeatureListBlock.tsx
+ADMIN:<br />
+FeatureListBlock.tsx<br />
 FeatureListItemBlock.tsx
 
-SITE:
-FeatureListBlock.tsx
+SITE:<br />
+FeatureListBlock.tsx<br />
 FeatureListItemBlock.tsx
 
-## Folder Structure:
+## Folder Structure
 
 ### API
 
@@ -48,11 +48,11 @@ The folder naming is Camel Case.
 
 #### Example (Blocks Folder)
 
-headingSection (heading-section.block.ts)
-imageSlider (image-slider.block.ts)
-imageSliderItem (image-slider-item.block.ts)
-media (media.block.ts)
-fullWidthImage (full-width-image.block.ts)
+headingSection (heading-section.block.ts)<br />
+imageSlider (image-slider.block.ts)<br />
+imageSliderItem (image-slider-item.block.ts)<br />
+media (media.block.ts)<br />
+fullWidthImage (full-width-image.block.ts)<br />
 fullWidthImageContent (full-width-image-content.block.ts)
 
 ### ADMIN
@@ -61,11 +61,11 @@ No folders necessary.
 
 #### Example (Blocks Folder)
 
-HeadingSectionBlock.tsx
-ImageSliderBlock.tsx
-ImageSliderItemBlock.tsx
-MediaBlock.tsx
-FullWidthImageBlock.tsx
+HeadingSectionBlock.tsx<br />
+ImageSliderBlock.tsx<br />
+ImageSliderItemBlock.tsx<br />
+MediaBlock.tsx<br />
+FullWidthImageBlock.tsx<br />
 FulWidthImageContentBlock.tsx
 
 ### SITE (Same as ADMIN)
@@ -74,9 +74,9 @@ No folders necessary.
 
 #### Example (Blocks Folder)
 
-HeadingSectionBlock.tsx
-ImageSliderBlock.tsx
-ImageSliderItemBlock.tsx
-MediaBlock.tsx
-FullWidthImageBlock.tsx
-FulWidthImageContentBlock.tsx
+HeadingSectionBlock.tsx<br />
+ImageSliderBlock.tsx<br />
+ImageSliderItemBlock.tsx<br />
+MediaBlock.tsx<br />
+FullWidthImageBlock.tsx<br />
+FulWidthImageContentBlock.tsx<br />
