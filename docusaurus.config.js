@@ -5,7 +5,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (
     module.exports = {
-        title: "Comet DXP Docs",
+        title: "COMET DXP Docs",
         tagline: "",
         url: "https://docs.comet-dxp.com",
         baseUrl: "/",
@@ -41,7 +41,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
             ({
                 navbar: {
-                    title: "Comet",
+                    title: "COMET DXP",
                     logo: {
                         alt: "My Site Logo",
                         src: "img/comet-logo.svg",
@@ -49,7 +49,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                     items: [
                         {
                             type: "doc",
-                            docId: "intro",
+                            docId: "overview/Overview", //when button Docs is pressed, you get redirected to the doc with this id
                             position: "left",
                             label: "Docs",
                         },
