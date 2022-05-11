@@ -7,7 +7,7 @@ sidebar_position: 2
 
 To create a new COMET DXP application, execute the following command in your OS command line:
 
-`npx create-react-app`
+`npx create-comet-app`
 
 :::info
 
