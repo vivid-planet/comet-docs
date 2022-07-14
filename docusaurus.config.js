@@ -74,6 +74,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                     theme: lightCodeTheme,
                     darkTheme: darkCodeTheme,
                 },
+                announcementBar: {
+                    id: "work-in-progress",
+                    content: "Documentation is a work in progress",
+                    backgroundColor: "var(--ifm-color-warning-contrast-background)",
+                    textColor: "var(--ifm-color-warning-contrast-foreground)",
+                    isCloseable: false,
+                },
             }),
     }
 );
