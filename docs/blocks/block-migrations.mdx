@@ -196,11 +196,12 @@ export class ChangeEyebrowMigration extends BlockMigration<(from: From) => To> i
 
 You will need a migration when
 
--   **adding** a new field to the block
+-   **adding** a _required_ field to the block
 -   **changing** an existing field of the block
 
 You don't necessarily need a migration when
 
+-   **adding** an _optional_ field to the block
 -   **removing** an existing field from the block
 -   **adding** an additionally supported block to a blocks block or an one of block
 -   **removing** a supported block from a blocks block or an one of block
