@@ -73,6 +73,23 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 prism: {
                     theme: lightCodeTheme,
                     darkTheme: darkCodeTheme,
+                    magicComments: [
+                        {
+                            className: "theme-code-block-highlighted-line",
+                            line: "highlight-next-line",
+                            block: { start: "highlight-start", end: "highlight-end" },
+                        },
+                        {
+                            className: "code-block-addition-line",
+                            line: "addition-next-line",
+                            block: { start: "addition-start", end: "addition-end" },
+                        },
+                        {
+                            className: "code-block-removal-line",
+                            line: "removal-next-line",
+                            block: { start: "removal-start", end: "removal-end" },
+                        },
+                    ],
                 },
                 announcementBar: {
                     id: "work-in-progress",
