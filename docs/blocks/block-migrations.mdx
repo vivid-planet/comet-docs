@@ -68,7 +68,7 @@ export class ChangeEyebrowMigration extends BlockMigration<(from: From) => To> i
 ```
 
 We recommend to put each migration class into a separate file.
-The file's name should start with the migration verson, for instance `1-change-eyebrow.migration.ts`.
+The file's name should start with the migration version, for instance `1-change-eyebrow.migration.ts`.
 
 In the migration file we start by defining two interfaces:
 The `From` interface describes the block structure before we changed it, and the `To` interface describes how the block structure should be.
