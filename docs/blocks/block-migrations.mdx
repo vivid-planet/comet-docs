@@ -60,7 +60,7 @@ The version to which the migration migrates the block's structure is defined by 
 import { BlockMigration, BlockMigrationInterface } from "@comet/blocks-api";
 
 export class ChangeEyebrowMigration extends BlockMigration<(from: From) => To> implements BlockMigrationInterface {
-                            // highlight-next-line
+    // highlight-next-line
     public readonly toVersion = 1;
 
     ...
@@ -99,7 +99,7 @@ This method receives the "old" block (`From` interface) and transforms the block
 
 ```ts
 export class ChangeEyebrowMigration extends BlockMigration<(from: From) => To> implements BlockMigrationInterface {
-    ...
+    public readonly toVersion = 1;
 
     protected migrate({ eyebrow, ...other }: From): To {
         return {
@@ -110,7 +110,6 @@ export class ChangeEyebrowMigration extends BlockMigration<(from: From) => To> i
                         {
                             key: "12345",
                             // The "old" eyebrow string
-                            // highlight-next-line
                             text: eyebrow,
                             type: "unstyled",
                             depth: 0,
@@ -146,7 +145,8 @@ export const HeadlineBlock = createBlock(HeadlineBlockData, HeadlineBlockInput, 
 
 The next time the block is loaded from the database, the migration will be performed, migrating the block to the new structure.
 
-### Complete migration class
+<details>
+    <summary>Complete migration class</summary>
 
 ```ts title="1-change-eyebrow.migration.ts"
 import { BlockDataInterface, BlockMigration, BlockMigrationInterface } from "@comet/blocks-api";
@@ -189,6 +189,8 @@ export class ChangeEyebrowMigration extends BlockMigration<(from: From) => To> i
     }
 }
 ```
+
+</details>
 
 ## FAQ
 
