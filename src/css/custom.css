@@ -18,15 +18,45 @@
     --ifm-code-font-size: 95%;
 }
 
-.docusaurus-highlight-code-line {
-    background-color: rgba(0, 0, 0, 0.1);
+:root {
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* If you have a different syntax highlighting theme for dark mode. */
+[data-theme="dark"] {
+    /* Color which works with dark mode syntax highlighting theme */
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.code-block-addition-line,
+.code-block-removal-line {
     display: block;
     margin: 0 calc(-1 * var(--ifm-pre-padding));
     padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme="dark"] .docusaurus-highlight-code-line {
-    background-color: rgba(0, 0, 0, 0.3);
+.code-block-addition-line,
+.code-block-addition-line > * {
+    /* !important is required to override inline styles */
+    color: var(--ifm-color-success-dark) !important;
+}
+
+.code-block-addition-line::before {
+    position: absolute;
+    content: "+";
+    left: 3px;
+}
+
+.code-block-removal-line,
+.code-block-removal-line > * {
+    /* !important is required to override inline styles */
+    color: var(--ifm-color-danger-dark) !important;
+}
+
+.code-block-removal-line::before {
+    position: absolute;
+    content: "-";
+    left: 3px;
 }
 
 /*body {

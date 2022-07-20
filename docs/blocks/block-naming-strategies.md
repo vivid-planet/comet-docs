@@ -1,6 +1,6 @@
 ---
 title: Block Naming Strategies
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 API &#8594 Kebab Case<br />
